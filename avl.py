@@ -23,8 +23,8 @@ class AVL(BST):
 
             def rotateRight(tree):
                 newTree = BinaryTreeAVL(tree.getRoot())
-                newTree.setLeft(tree.getRight())
-                newTree.setRight(tree.getLeft().getRight())
+                newTree.setRight(tree.getRight())
+                newTree.setLeft(tree.getLeft().getRight())
                 newTree.setBalance(tree.getBalance())
                 tree.setRoot(tree.getLeft().getRoot())
                 tree.setBalance(tree.getLeft().getBalance())
